@@ -1,3 +1,11 @@
+<!--finished here https://angular.io/tutorial/toh-pt2#add-a-click-event-binding-->
+<h2>My Heros list</h2>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <span class="badge" (click)="onSelect(hero)">{{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
+
 <h2>{{hero.name}} Details</h2>
 <div><span>id: </span>{{hero.id}}</div>
 <div><span>name: </span>{{hero.name| uppercase}}</div>
